@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ülke Bilgisi Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Ülke Bilgisi Uygulaması</h1>
+    <p class="intro">Dünya üzerindeki ülkeler hakkında detaylı bilgiler edinin!</p>
+    <input type="text" id="country-name" placeholder="Bir ülke adı girin..." />
+    <button onclick="getCountryInfo()">Bilgileri Getir</button>
+
+    <div class="error" id="error-message"></div>
+
+    <div class="country-info" id="country-info">
+        <!-- Bayrağı buraya ekliyoruz -->
+        <img id="country-flag" src="" alt="Bayrak" style="width: 100px; height: auto; margin-bottom: 15px;">
+        <h2 id="country-name-display"></h2>
+        <p><strong>Başkent:</strong> <span id="capital"></span></p>
+        <p><strong>Nüfus:</strong> <span id="population"></span></p>
+        <p><strong>Resmi Dil:</strong> <span id="languages"></span></p>
+        <p><strong>Para Birimi:</strong> <span id="currency"></span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
